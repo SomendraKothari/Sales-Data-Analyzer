@@ -16,6 +16,7 @@ prod_wise_sale=dataframe.Product_Category.value_counts()
 prod_wise_sale.to_csv("Product-Wise-Sale-Data")
 # Picking the best-selling-product
 best_selling_prod=prod_wise_sale.idxmax()
+print(f"Best selling product: {best_selling_prod}")
 # For tracking the Monthly-Sales-Trend
 months = {'01':'JANUARY','02':'FEBRUARY','03':'MARCH','04':'APRIL','05':'MAY','06':'JUNE','07':'JULY','08':'AUGUST','09':'SEPTEMBER','10':'OCTOBER','11':'NOVEMBER','12':'DECEMBER' }
 months_list = list(months.values())
