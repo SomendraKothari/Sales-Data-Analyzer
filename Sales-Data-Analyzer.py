@@ -1,7 +1,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 # Store csv as DataFrame
-dataframe = pd.read_csv(r"E:\coding\DATASETS\Sales Data\sales_data.csv")
+dataframe = pd.read_csv("sales_data.csv")
 # Calculate the total amount of each row
 total_amt=dataframe.Quantity_Sold*dataframe.Unit_Price*(1-dataframe.Discount)
 # Calculating the total revenue it made in year 2023
